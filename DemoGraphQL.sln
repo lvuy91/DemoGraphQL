@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoGraphQLUnitTest", "DemoGraphQLUnitTest\DemoGraphQLUnitTest.csproj", "{14FA3CC7-1A17-4BCF-A959-1EC91060E981}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoGraphQL", "DemoGraphQL\DemoGraphQL.csproj", "{F6F9B52F-7256-4171-A318-2EBBE5E8C986}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14FA3CC7-1A17-4BCF-A959-1EC91060E981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14FA3CC7-1A17-4BCF-A959-1EC91060E981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14FA3CC7-1A17-4BCF-A959-1EC91060E981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14FA3CC7-1A17-4BCF-A959-1EC91060E981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6F9B52F-7256-4171-A318-2EBBE5E8C986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6F9B52F-7256-4171-A318-2EBBE5E8C986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6F9B52F-7256-4171-A318-2EBBE5E8C986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6F9B52F-7256-4171-A318-2EBBE5E8C986}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC5000E6-3BA5-4438-AB72-F2F91003EC13}
+	EndGlobalSection
+EndGlobal
