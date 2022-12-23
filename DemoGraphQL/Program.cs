@@ -1,4 +1,9 @@
+using DemoGraphQL.Mutations;
+using DemoGraphQL.Queries;
 using DemoGraphQL.Repositories;
+using DemoGraphQL.Transactions;
+using HotChocolate.Execution.Processing;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +15,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 InitInjection(builder.Services);
+InitGraphQL(builder.Services);
 
 var app = builder.Build();
 
@@ -26,12 +32,29 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.MapGraphQL();
+
 app.Run();
 
 static void InitInjection(IServiceCollection services)
 {
-    services.Services.AddScoped<IApplicationBuilder, ApplicationBuilder>();
-    services.Services.AddScoped<ICustomerRepository, CustomerRepository>();
-    services.Services.AddScoped<IOrderRepository, OrderRepository>();
-    services.Services.AddScoped<IProductRepository, ProductRepository>();
+    //services.AddScoped<IApplicationBuilder, ApplicationBuilder>();
+    //services.AddScoped<ICustomerRepository, CustomerRepository>();
+    //services.AddScoped<IOrderRepository, OrderRepository>();
+    //services.AddScoped<IProductRepository, ProductRepository>();
+    /*[UseMutationConvention]
+    public User? UpdateUserNameAsync([ID] Guid userId, string username)
+    {
+    //...
+    }*/
+}
+
+static void InitGraphQL(IServiceCollection services)
+{
+    services
+        .AddGraphQLServer()
+        .AddMutationConventions(applyToAllMutations: true)
+        .AddQueryType<OrderQuery>()
+        .AddMutationType<OrderMutation>()
+        .AddTransactionScopeHandler<CustomTransactionScopeHandler>();
 }

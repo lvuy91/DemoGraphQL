@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\GraphQL\\graphQLCSharp\\DemoGraphQL\\DemoGraphQL\\DemoGraphQL.csproj": {}
+    "C:\\Share\\Projects\\.net\\GaphQLDemo\\DemoGraphQL\\DemoGraphQL\\DemoGraphQL.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\GraphQL\\graphQLCSharp\\DemoGraphQL\\DemoGraphQL\\DemoGraphQL.csproj": {
+    "C:\\Share\\Projects\\.net\\GaphQLDemo\\DemoGraphQL\\DemoGraphQL\\DemoGraphQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\GraphQL\\graphQLCSharp\\DemoGraphQL\\DemoGraphQL\\DemoGraphQL.csproj",
+        "projectUniqueName": "C:\\Share\\Projects\\.net\\GaphQLDemo\\DemoGraphQL\\DemoGraphQL\\DemoGraphQL.csproj",
         "projectName": "DemoGraphQL",
-        "projectPath": "E:\\Projects\\GraphQL\\graphQLCSharp\\DemoGraphQL\\DemoGraphQL\\DemoGraphQL.csproj",
-        "packagesPath": "C:\\Users\\VAN UY\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\GraphQL\\graphQLCSharp\\DemoGraphQL\\DemoGraphQL\\obj\\",
+        "projectPath": "C:\\Share\\Projects\\.net\\GaphQLDemo\\DemoGraphQL\\DemoGraphQL\\DemoGraphQL.csproj",
+        "packagesPath": "C:\\Users\\Uy.Le\\.nuget\\packages\\",
+        "outputPath": "C:\\Share\\Projects\\.net\\GaphQLDemo\\DemoGraphQL\\DemoGraphQL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\VAN UY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Uy.Le\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,7 +27,8 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/toogood/_packaging/toogood/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -48,6 +49,14 @@
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
+            },
+            "HotChocolate": {
+              "target": "Package",
+              "version": "[12.15.2, )"
+            },
+            "HotChocolate.AspNetCore": {
+              "target": "Package",
+              "version": "[12.15.2, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -77,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
